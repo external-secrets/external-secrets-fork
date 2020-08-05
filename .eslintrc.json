@@ -1,0 +1,21 @@
+{
+  "extends": "./node_modules/gts/",
+  "overrides": [
+    {
+      "files": "**/*.test.ts",
+      "rules": {
+        "node/no-unpublished-import": 0
+      }
+    }
+  ],
+  "rules": {
+    "@typescript-eslint/member-delimiter-style": 0,
+    "node/no-unpublished-require": [
+      "error",
+      {
+        "allowModules": ["dotenv"]
+      }
+    ],
+    "@typescript-eslint/no-explicit-any": 0
+  }
+}
